@@ -1,0 +1,2 @@
+﻿# GachaSimulator
+Standart Gacha Simulator

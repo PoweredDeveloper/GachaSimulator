@@ -11,7 +11,7 @@ export const characters = {
         "laccelott": {
             id: "laccelott",
             name: "Laccelott",
-            description: "Это мужчина лет 54-х одет в тяжелую броню, носит ковбойскую шляпу.",
+            description: "Это мужчина крепкого телосложения лет 54-х одет в тяжелую броню, носит ковбойскую шляпу.",
             rarity: 5,
             dmg: 3.8,
             hp: 35

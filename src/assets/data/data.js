@@ -13,8 +13,8 @@ export const characters = {
             name: "Laccelott",
             description: "Это мужчина лет 54-х одет в тяжелую броню, носит ковбойскую шляпу.",
             rarity: 5,
-            dmg: 4.8,
-            hp: 30
+            dmg: 3.8,
+            hp: 35
         }
     },
     epic: {

@@ -49,11 +49,12 @@ export const characters = {
             rarity: 3,
             dmg: 5
         },
-        "gomenne": {
-            id: "gomenne",
-            name: "Cutie",
+        "solar": {
+            id: "solar",
+            name: "Solar",
             rarity: 3,
-            dmg: 6
+            dmg: 9,
+            hp: 5
         },
     }
 }

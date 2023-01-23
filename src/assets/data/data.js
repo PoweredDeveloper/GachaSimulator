@@ -1,11 +1,5 @@
 export const characters = {
     unique: {
-        "nyanpasu": {
-            id: "nyanpasu",
-            name: "Nyanpasu",
-            rarity: 6,
-            dmg: 10
-        },
         "scissors": {
             id: "scissors",
             name: "Scissors",
@@ -14,20 +8,16 @@ export const characters = {
         }
     },
     legendary: {
-        "js_monster": {
-            id: "js_monster",
-            name: "JS Monster",
+        "laccelott": {
+            id: "laccelott",
+            name: "Laccelott",
+            description: "Это мужчина лет 54-х одет в тяжелую броню, носит ковбойскую шляпу.",
             rarity: 5,
-            dmg: 8
+            dmg: 4.8,
+            hp: 30
         }
     },
     epic: {
-        "holy_sister": {
-            id: "holy_sister",
-            name: "Holy Fuck",
-            rarity: 4,
-            dmg: 7
-        },
         "siciya": {
             id: "siciya",
             name: "Siciya",
@@ -37,23 +27,12 @@ export const characters = {
         }
     },
     rare: {
-        "jorno_jovanna": {
-            id: "jorno_jovanna",
-            name: "Jorno",
-            rarity: 3,
-            dmg: 6
-        },
-        "computer_master": {
-            id: "computer_master",
-            name: "PC Master",
-            rarity: 3,
-            dmg: 5
-        },
         "solar": {
             id: "solar",
             name: "Solar",
+            description: "Худощавый парень 17 лет. Одет в белую накидку со знаком ковенанта солнца. Под накидкой лёгкий ватник. бегает без обуви в синих носках с кртиной 'Лунная ночь' Вангога. на голове капюшон. Лицо скрыто субстанцией аки туман.",
             rarity: 3,
-            dmg: 9,
+            dmg: 9.0,
             hp: 5
         },
     }

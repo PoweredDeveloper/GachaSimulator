@@ -15,6 +15,16 @@ export const characters = {
             rarity: 5,
             dmg: 3.8,
             hp: 35
+        },
+        "viollera_siqvel": {
+            id: "viollera_siqvel",
+            name : "Viollera Siqvel",
+            rarity: 5,
+            dmg: 8.9,
+            hp: 18,
+            additional: {
+                mana: 20
+            }
         }
     },
     epic: {

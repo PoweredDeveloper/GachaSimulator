@@ -1,12 +1,13 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './CharacterCard.css'
 
 export default function CharacterCard({ character, ...props }) {
   return (
-    <div className='character_card'>
+    <motion.div initial={{ scaleX: 0.5, scale: 0 }} animate={{ scaleX: 1, scale: 1 }} className='character_card'>
       <span>{character.char.name}</span>
       <span>{'★'.repeat(character.char.rarity)}</span>
       <span>{character.amount}x</span>
-    </div>
+    </motion.div>
   )
 }

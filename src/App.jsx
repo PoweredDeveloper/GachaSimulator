@@ -57,7 +57,7 @@ function App() {
       guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 },
     })
     setCharacters([])
-    setGachagems(10)
+    setGachagems(10e10)
   }
 
   const sendCharacters = (character) => {

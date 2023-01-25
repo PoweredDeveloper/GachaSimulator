@@ -1,4 +1,6 @@
-﻿</br>
+﻿<br>
+<h1 align="center"><b>Gacha Simulator</b></h1>
+<br>
 <div align="center">
 
 ![GitHub](https://img.shields.io/github/license/PoweredDeveloper/GachaSimulator?color=%23f2f2f2&logo=github&logoColor=%23f2f2f2&style=for-the-badge)
@@ -6,7 +8,7 @@
 
 </div>
 
-# Gacha Simulattor
+## Gacha Simulattor
 This is a simple gacha game. Here you can roll characters  by spending **Gacha Gems**.
 
 <br>

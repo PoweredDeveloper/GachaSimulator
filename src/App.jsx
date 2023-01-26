@@ -57,7 +57,7 @@ function App() {
       guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 },
     })
     setCharacters([])
-    setGachagems(10e10)
+    setGachagems(1000)
   }
 
   const sendCharacters = (character) => {
@@ -81,7 +81,6 @@ function App() {
   const spendGachaGems = (spend) => {
     setGachagems(gachaGems - spend)
   }
-  console.log(characters)
 
   return (
     <>

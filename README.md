@@ -15,6 +15,6 @@ This is a simple gacha game. Here you can roll characters  by spending **Gacha G
 
 ### There is small info about rolls:
 ---
-- One Roll Costs `130` Gacha Gems
+- One Roll Costs ` 130 ` Gacha Gems
 - There is **10% Sale** on 10x Roll
 - You can get Gacha Gems when you **Offline**!

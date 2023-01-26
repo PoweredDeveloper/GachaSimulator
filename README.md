@@ -1,5 +1,5 @@
 ﻿<br>
-<h1 align="center"><b>Gacha Simulator</b></h1>
+<h1 align="center">✨ <b>Gacha Simulator</b> ✨</h1>
 <br>
 <img src="./Images/preview.png" alt="preview" />
 <br>
@@ -10,13 +10,13 @@
 
 </div>
 
-## Gacha Simulattor
-This is a simple gacha game. Here you can roll characters  by spending **Gacha Gems**.
+## 🎮 Gacha Simulator
+This is a simple gacha game. Here you can roll characters  by spending 💎 **Gacha Gems**.
 
 <br>
 
 ### There is small info about rolls:
 ---
 - One Roll Costs ` 130 ` Gacha Gems
-- There is **10% Sale** on 10x Roll
-- You can get Gacha Gems when you **Offline**!
+- There is **10% Sale** on 10x Roll 
+- You can get Gacha Gems when you ⏱️ **Offline**!

@@ -1,5 +1,6 @@
 ﻿<br>
 <h1 align="center"><b>Gacha Simulator</b></h1>
+<img src="./Images/preview.png" alt="preview" />
 <br>
 <div align="center">
 

@@ -1,5 +1,5 @@
-<br>
-<h1 align="center">✨ <b>Gacha Simulator</b> ✨</h1>
+﻿<br>
+<h1 align="center">✨<b>Gacha Simulator</b>✨</h1>
 <br>
 <img src="./Images/preview.png" alt="preview" />
 <br>

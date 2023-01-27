@@ -54,3 +54,32 @@
 .header_main button:focus {
   border: 2px var(--white) solid;
 }
+
+.progress_bar {
+  position: relative;
+  height: 1rem;
+  width: 10rem;
+  padding: 0.5rem;
+  background-color: var(--dark_gray);
+  border-radius: 0.5rem;
+  display: flex !important;
+  justify-content: start !important;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.progress_bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.progress_bar div {
+  transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+  border-radius: 0.2rem;
+  background-color: var(--accent);
+}

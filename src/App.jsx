@@ -57,12 +57,11 @@ function App() {
       guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 },
     })
     setCharacters([])
-    setGachagems(1000e10)
+    setGachagems(10000)
   }
 
   const sendCharacters = (character) => {
     let newCharacters = characters
-    console.log(newCharacters.some((char) => char.char.name === character.name))
     if (newCharacters.some((char) => char.char.id === character.id)) {
       newCharacters.forEach((group) => {
         if (group.char.id === character.id) {
@@ -84,7 +83,7 @@ function App() {
 
   return (
     <>
-      <Header wishes={wishes} gachaGems={gachaGems} addGachaGems={addGachaGems} />
+      <Header wishes={wishes} gachaGems={gachaGems} addGachaGems={addGachaGems} gemsTimerIncome={3} timerSpeed={50} />
       <Pull
         wished={wishes}
         increaseWishes={increaseWishes}

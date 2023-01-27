@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import plus from '../../assets/svgs/icons/plus.svg'
 import './Header.css'
 
-export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, gemsTimerIncome }) {
+export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, gemsTimerIncome, buttonGemsAdd }) {
   const [timer, setTimer] = useState(0)
 
   // Timer
@@ -25,7 +25,7 @@ export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, ge
     <header className='header_main'>
       <h4>Total wished: {wishes.total}</h4>
       <div>
-        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={() => addGachaGems(20)}>
+        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={() => addGachaGems(buttonGemsAdd)}>
           <img src={plus} alt='+' />
         </motion.button>
         <h4>

@@ -5,8 +5,8 @@
 <br>
 <div align="center">
 
-![GitHub](https://img.shields.io/github/license/PoweredDeveloper/GachaSimulator?color=%23212121&log=github&logoColor=%23f2f2f2&style=for-the-badge)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/PoweredDeveloper/GachaSimulator?color=%23212121&logo=semver&logoColor=%23f2f2f2&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/PoweredDeveloper/GachaSimulator?color=%23f1f1f1&log=github&logoColor=%23f1f1f1&styl=for-the-badge)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/PoweredDeveloper/GachaSimulator?color=%23f1f1f1&logo=semver&logoColor=%23f1f1f1&styl=for-the-badge)
 
 </div>
 

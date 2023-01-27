@@ -32,7 +32,7 @@ This is a simple gacha game. Here you can roll characters  by spending 💎 **Ga
 
 Firstly you need to install [Node.js](https://nodejs.org/en/)
 
-Be sure that you install [Framer Motion](https://www.framer.com/motion/) and [React](https://reactjs.org/) I use [Vite](https://vitejs.dev/) (I reccomend to use it too)
+Be sure that you install [Framer Motion](https://www.framer.com/motion/) and [React](https://reactjs.org/) I use [Vite](https://vitejs.dev/) ( I reccomend to use it too )
 
 Then:
 ```console

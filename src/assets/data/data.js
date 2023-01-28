@@ -1,10 +1,11 @@
 export const characters = {
     unique: {
-        "scissors": {
-            id: "scissors",
-            name: "Scissors",
+        "hellric": {
+            id: "helric",
+            name: "Helric",
             rarity: 6,
-            dmg: 10.1
+            dmg: 4,
+            hp: 39
         }
     },
     legendary: {

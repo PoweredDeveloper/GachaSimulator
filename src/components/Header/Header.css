@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: relative;
 }
 
 .header_main h4 {
@@ -56,7 +58,9 @@
 }
 
 .progress_bar {
-  position: relative;
+  position: absolute;
+  bottom: -2.5rem;
+  right: 0rem;
   height: 1rem;
   width: 10rem;
   padding: 0.5rem;

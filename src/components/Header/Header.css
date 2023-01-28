@@ -82,6 +82,7 @@
 }
 
 .progress_bar div {
+  transition: .1s cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 100%;
   border-radius: 0.2rem;
   background-color: var(--accent);

@@ -31,8 +31,8 @@ export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, ge
         <h4>
           Gacha Gems: <span>{gachaGems}</span>
         </h4>
+        <ProgressBar gemsTimerIncome={gemsTimerIncome} timerSpeed={timerSpeed} timer={timer} />
       </div>
-      <ProgressBar gemsTimerIncome={gemsTimerIncome} timerSpeed={timerSpeed} timer={timer} />
     </header>
   )
 }

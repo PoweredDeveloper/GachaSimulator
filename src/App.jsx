@@ -83,7 +83,7 @@ function App() {
 
   return (
     <>
-      <Header wishes={wishes} gachaGems={gachaGems} addGachaGems={addGachaGems} gemsTimerIncome={3} timerSpeed={50} buttonGemsAdd={1} />
+      <Header wishes={wishes} gachaGems={gachaGems} addGachaGems={addGachaGems} gemsTimerIncome={3} timerSpeed={10} buttonGemsAdd={1} />
       <Pull
         wished={wishes}
         increaseWishes={increaseWishes}

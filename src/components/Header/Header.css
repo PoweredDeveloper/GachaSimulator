@@ -60,7 +60,7 @@
   height: 1rem;
   width: 10rem;
   padding: 0.5rem;
-  background-color: var(--dark_gray);
+  background-color: var(--black);
   border-radius: 0.5rem;
   display: flex !important;
   justify-content: start !important;
@@ -78,7 +78,6 @@
 }
 
 .progress_bar div {
-  transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 100%;
   border-radius: 0.2rem;
   background-color: var(--accent);

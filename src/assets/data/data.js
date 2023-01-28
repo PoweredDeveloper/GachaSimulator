@@ -3,9 +3,23 @@ export const characters = {
         "helric": {
             id: "helric",
             name: "Helric",
+            description: "Лысый гном королевских кровей с огромным животом и лысой головой. Носит с собой шипастый щит который полностью закрывает его.",
             rarity: 6,
-            dmg: 4,
-            hp: 39
+            dmg: 2,
+            hp: 40,
+            additional: {
+                features: "На короткое время поглощает 90% принимающего чистого урона"
+            }
+        },
+        "rayton": {
+            id: "rayton",
+            name: "Rayton",
+            rarity: 6,
+            dmg: 9,
+            hp: 31,
+            additional: {
+                features: "Очень медленный танк, зато боевая мощь - ух! "
+            }
         }
     },
     legendary: {

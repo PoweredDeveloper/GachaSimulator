@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import plus from '../../assets/svgs/icons/plus.svg'
+import gift from '../../assets/svgs/icons/gift.svg'
 import './Header.css'
 import ProgressBar from './ProgressBar/ProgressBar'
 
@@ -26,7 +26,7 @@ export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, ge
       <h4>Total wished: {wishes.total}</h4>
       <div>
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={() => addGachaGems(buttonGemsAdd)}>
-          <img src={plus} alt='+' />
+          <img src={gift} alt='+' />
         </motion.button>
         <h4>
           Gacha Gems: <span>{gachaGems}</span>

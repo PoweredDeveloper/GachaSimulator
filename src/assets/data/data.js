@@ -1,6 +1,6 @@
 export const characters = {
     unique: {
-        "hellric": {
+        "helric": {
             id: "helric",
             name: "Helric",
             rarity: 6,

@@ -57,7 +57,7 @@ function App() {
       guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 },
     })
     setCharacters([])
-    setGachagems(10000)
+    setGachagems(1e100)
   }
 
   const sendCharacters = (character) => {
@@ -83,7 +83,7 @@ function App() {
 
   return (
     <>
-      <Header wishes={wishes} gachaGems={gachaGems} addGachaGems={addGachaGems} gemsTimerIncome={3} timerSpeed={10} buttonGemsAdd={1} />
+      <Header wishes={wishes} gachaGems={gachaGems} addGachaGems={addGachaGems} gemsTimerIncome={10} timerSpeed={600} buttonGemsAdd={1} />
       <Pull
         wished={wishes}
         increaseWishes={increaseWishes}

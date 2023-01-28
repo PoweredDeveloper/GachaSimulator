@@ -47,6 +47,17 @@ export const characters = {
             rarity: 4,
             dmg: 6.8,
             hp: 10
+        },
+        "milina": {
+            id: "milina",
+            name: "Milina",
+            rarity: 4,
+            dmg: 9,
+            hp: 21,
+            additional: {
+                buffs: "При убийстве врага её ярость повышается на 3% ( макс. 15%),  увеличивая её скорость атаки и передвижения на 40 секунд.",
+                features: "Милая горничная с маленькой дальностью атаки."
+            }
         }
     },
     rare: {

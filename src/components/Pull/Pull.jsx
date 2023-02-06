@@ -1,5 +1,5 @@
-import React from 'react'
-import { characters, chances, guarantees } from '../../assets/data/data'
+import React, { useState } from 'react'
+import { characters, chances, guarantees, softPitys } from '../../assets/data/data'
 import './Pull.css'
 import randomNumber from '../../assets/utils'
 
@@ -15,6 +15,7 @@ export default function Pull({
   multipleRollAmount,
   ...props
 }) {
+  const [softPity, setSoftPity] = useState([0, 0])
   
   const checkChances = (chances) => {
     let sum = 0

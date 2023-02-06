@@ -73,6 +73,13 @@ export const characters = {
                 buffs: "При убийстве врага её ярость повышается на 3% ( макс. 15%),  увеличивая её скорость атаки и передвижения на 40 секунд.",
                 features: "Милая горничная с маленькой дальностью атаки."
             }
+        },
+        "joshiro": {
+            id: "joshiro",
+            name: "Joshiro",
+            rarity: 4,
+            dmg: 11,
+            hp: 5
         }
     },
     rare: {
@@ -95,7 +102,28 @@ export const characters = {
                 mana: 10,
                 features: "Является воплощением истинной любви к жизни и к окружающему миру. Коллекционирует фантики от леденцов. На губе продолговатый шрам, полученный в процессе оказания помощи бездомной кошке."
             }
-        }
+        },
+        "gotari": {
+            id: "gotari",
+            name: "Gotari",
+            rarity: 3,
+            dmg: 7,
+            hp: 12
+        },
+        "shitaru": {
+            id: "shitaru",
+            name: "Shitaru",
+            rarity: 3,
+            dmg: 6.5,
+            hp: 14
+        },
+        "kokoro": {
+            id: "kokoro",
+            name: "Kokoro",
+            rarity: 3,
+            dmg: 7,
+            hp: 10
+        },
     }
 }
 
@@ -112,4 +140,9 @@ export const guarantees = {
     legendary: 120,
     epic: 60,
     rare: 30
+}
+
+export const softPitys = {
+    unique: [200, 0.1],
+    legendary: [100, 0.2]
 }

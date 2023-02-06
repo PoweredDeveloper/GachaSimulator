@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import gift from '../../assets/svgs/icons/gift.svg'
 import './Header.css'
 import ProgressBar from './ProgressBar/ProgressBar'
+import gem from '../../assets/img/gem.png'
 
 export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, gemsTimerIncome, buttonGemsAdd }) {
   const [timer, setTimer] = useState(0)
@@ -29,7 +30,9 @@ export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, ge
           <img src={gift} alt='+' />
         </motion.button>
         <h4>
-          Gacha Gems: <span>{gachaGems}</span>
+          {/* <img src={gem} alt="gem" /> */}
+          Gems: 
+          <span>{gachaGems}</span>
         </h4>
         <ProgressBar gemsTimerIncome={gemsTimerIncome} timerSpeed={timerSpeed} timer={timer} />
       </div>

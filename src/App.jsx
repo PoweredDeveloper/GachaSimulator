@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import Pull from './components/Pull/Pull'
 import Header from './components/Header/Header'
 import CharacterList from './components/ChracterList/CharacterList'
-import Charts from './components/Charts/Charts'
 
 const LS_WISHES_KEY = 'gacha.wisher.wishes'
 const LS_CHARACTERS_KEY = 'gacha.wisher.characters'
@@ -97,7 +96,6 @@ function App() {
         multipleRollAmount={10}
       />
       <CharacterList characters={characters} />
-      <Charts />
     </>
   )
 }

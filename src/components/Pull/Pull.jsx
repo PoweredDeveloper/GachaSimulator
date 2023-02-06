@@ -1,6 +1,7 @@
 import React from 'react'
 import { characters, chances, guarantees } from '../../assets/data/data'
 import './Pull.css'
+import randomNumber from '../../assets/utils'
 
 export default function Pull({
   wished,
@@ -14,10 +15,7 @@ export default function Pull({
   multipleRollAmount,
   ...props
 }) {
-  const randomNumber = (min = 0, max = 100, multiplyBy = 100) => {
-    return (Math.random(max - min) + min) * multiplyBy
-  }
-
+  
   const checkChances = (chances) => {
     let sum = 0
     Object.entries(chances).forEach((e) => (sum += e[1]))
@@ -33,7 +31,7 @@ export default function Pull({
     checkChances(chances)
     spendGachaGems(rollCost)
 
-    const randNumber = randomNumber()
+    const randNumber = randomNumber(0, 100, 100)
     dropCharacter(randNumber)
   }
 
@@ -45,7 +43,7 @@ export default function Pull({
     spendGachaGems(multipleRollCost)
 
     for (let i = 0; i < rollCount; i++) {
-      const randNumber = randomNumber()
+      const randNumber = randomNumber(0, 100, 100)
       dropCharacter(randNumber)
     }
   }

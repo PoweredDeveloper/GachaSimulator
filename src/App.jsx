@@ -17,15 +17,21 @@ function App() {
   const [gachaGems, setGachagems] = useState(0)
 
   useEffect(() => {
-    setWishes(JSON.parse(localStorage.getItem(LS_WISHES_KEY))) // On Load
-    setCharacters(JSON.parse(localStorage.getItem(LS_CHARACTERS_KEY))) // On Load
-    setGachagems(Number(localStorage.getItem(LS_GEMS_KEY))) // On Load
+    if (localStorage.getItem(LS_WISHES_KEY) != null) setWishes(JSON.parse(localStorage.getItem(LS_WISHES_KEY))) // On Load
+    else setWishes({total: 0, guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 }})
+    if (localStorage.getItem(LS_CHARACTERS_KEY) != null) setCharacters(JSON.parse(localStorage.getItem(LS_CHARACTERS_KEY))) // On Load
+    else setCharacters([])
+    if (localStorage.getItem(LS_GEMS_KEY) != null) setGachagems(Number(localStorage.getItem(LS_GEMS_KEY))) // On Load
+    else setGachagems(1300)
   }, [])
 
   useEffect(() => {
     localStorage.setItem(LS_WISHES_KEY, JSON.stringify(wishes)) // Update
+  }, [wishes])
+
+  useEffect(() => {
     localStorage.setItem(LS_CHARACTERS_KEY, JSON.stringify(characters)) // Update
-  }, [wishes, characters])
+  }, [characters])
 
   useEffect(() => {
     localStorage.setItem(LS_GEMS_KEY, gachaGems.toString())

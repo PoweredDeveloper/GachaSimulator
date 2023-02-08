@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { characters, chances, guarantees, softPitys } from '../../assets/data/data'
-import './Pull.css'
 import randomNumber from '../../assets/utils'
 
 export default function Pull({

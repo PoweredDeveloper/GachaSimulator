@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import './CharacterCard.css'
 
 export default function CharacterCard({ character, ...props }) {
   return (

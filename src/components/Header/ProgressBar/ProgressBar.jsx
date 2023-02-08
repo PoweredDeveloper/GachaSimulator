@@ -1,5 +1,4 @@
 import React from 'react'
-import '../Header.css'
 
 export default function ProgressBar({ gemsTimerIncome, timerSpeed, timer }) {
   return (

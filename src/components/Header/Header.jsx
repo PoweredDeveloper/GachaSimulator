@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import gift from '../../assets/svgs/icons/gift.svg'
-import './Header.css'
 import ProgressBar from './ProgressBar/ProgressBar'
 import gem from '../../assets/img/gem.png'
 

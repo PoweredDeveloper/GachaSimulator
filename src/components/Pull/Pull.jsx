@@ -1,3 +1,8 @@
+// Code written by: 
+// Powered Developer <https://github.com/PoweredDeveloper>
+// (Istomin Mikhail) Check my profile for more info.
+// MIT LICENSE
+ 
 import React, { useState } from 'react'
 import { characters, chances, guarantees, softPitys } from '../../assets/data/data'
 import randomNumber from '../../assets/utils'
@@ -14,8 +19,10 @@ export default function Pull({
   multipleRollAmount,
   ...props
 }) {
+  // Хуки
   const [softPity, setSoftPity] = useState([0, 0])
   
+  // Проверка на соблюдение шансов
   const checkChances = (chances) => {
     let sum = 0
     Object.entries(chances).forEach((e) => (sum += e[1]))
@@ -26,6 +33,7 @@ export default function Pull({
       )
   }
 
+  // Одиночное вращение
   const oneRoll = () => {
     if (gachaGems < rollCost) return
     checkChances(chances)
@@ -35,6 +43,7 @@ export default function Pull({
     dropCharacter(randNumber)
   }
 
+  // Мульти-вращение
   const multipleRoll = (rollCount) => {
     if (rollCount <= 0) throw new Error("Roll Count can't be lower than 1")
     const multipleRollCost = rollCost * rollCount - ((rollCost * rollCount) / 100) * discount
@@ -48,6 +57,7 @@ export default function Pull({
     }
   }
 
+  // Определение редкости дропа
   const dropCharacter = (randNumber) => {
     increaseWishes('total')
     if (randNumber <= chances.unique || wished.guarantees.lastUnique >= guarantees.unique) addCharacter('unique')
@@ -59,6 +69,7 @@ export default function Pull({
       addCharacter('rare')
   }
 
+  // Добавление персонажа в массив
   const addCharacter = (characterRarity = 'rare') => {
     const characterGroup = characters[characterRarity]
     const randomizedCharacter = Math.ceil(Math.random() * Object.keys(characterGroup).length) - 1
@@ -70,10 +81,11 @@ export default function Pull({
     sendCharacter(newCharacter)
   }
 
+  // JSX структура
   return (
-    <div className='roll-menu'>
+    <div className=''>
       <button onClick={oneRoll}>Roll x1</button>
-      <button className='discount-btn' onClick={() => multipleRoll(multipleRollAmount)} discount={discount}>
+      <button className='' onClick={() => multipleRoll(multipleRollAmount)} discount={discount}>
         Roll x{multipleRollAmount}
       </button>
       <button onClick={reset}>Reset</button>

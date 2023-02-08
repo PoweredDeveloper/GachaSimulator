@@ -1,3 +1,11 @@
+// Code written by: 
+// Powered Developer <https://github.com/PoweredDeveloper>
+// (Istomin Mikhail) Check my profile for more info.
+// MIT LICENSE
+ 
+// Главная дата проекта, все данные тут.
+
+// Персонажи
 export const characters = {
     unique: {
         "helric": {
@@ -127,6 +135,7 @@ export const characters = {
     }
 }
 
+// Шансы
 export const chances = {
     unique: 0.7,
     legendary: 2.4,
@@ -135,6 +144,7 @@ export const chances = {
     trash: 81.5
 }
 
+// Hard Pity
 export const guarantees = {
     unique: 240,
     legendary: 120,
@@ -142,6 +152,7 @@ export const guarantees = {
     rare: 30
 }
 
+// Sodt Pity
 export const softPitys = {
     unique: [200, 0.1],
     legendary: [100, 0.2]

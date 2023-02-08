@@ -1,3 +1,8 @@
+// Code written by: 
+// Powered Developer <https://github.com/PoweredDeveloper>
+// (Istomin Mikhail) Check my profile for more info.
+// MIT LICENSE
+
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Pull from './components/Pull/Pull'
@@ -8,7 +13,9 @@ const LS_WISHES_KEY = 'gacha.wisher.wishes'
 const LS_CHARACTERS_KEY = 'gacha.wisher.characters'
 const LS_GEMS_KEY = 'gacha.wisher.gems'
 
+// Сердце приложения отсюда работает весь проект
 function App() {
+  // Хуки useState
   const [wishes, setWishes] = useState({
     total: 0,
     guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 },
@@ -16,24 +23,27 @@ function App() {
   const [characters, setCharacters] = useState([])
   const [gachaGems, setGachagems] = useState(0)
 
+  // Вызывается при загрузке сайта (первом рендере)
   useEffect(() => {
-    if (localStorage.getItem(LS_WISHES_KEY) != null) setWishes(JSON.parse(localStorage.getItem(LS_WISHES_KEY))) // On Load
+    if (localStorage.getItem(LS_WISHES_KEY) != null) setWishes(JSON.parse(localStorage.getItem(LS_WISHES_KEY)))
     else setWishes({total: 0, guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 }})
-    if (localStorage.getItem(LS_CHARACTERS_KEY) != null) setCharacters(JSON.parse(localStorage.getItem(LS_CHARACTERS_KEY))) // On Load
+    if (localStorage.getItem(LS_CHARACTERS_KEY) != null) setCharacters(JSON.parse(localStorage.getItem(LS_CHARACTERS_KEY)))
     else setCharacters([])
-    if (localStorage.getItem(LS_GEMS_KEY) != null) setGachagems(Number(localStorage.getItem(LS_GEMS_KEY))) // On Load
+    if (localStorage.getItem(LS_GEMS_KEY) != null) setGachagems(Number(localStorage.getItem(LS_GEMS_KEY)))
     else setGachagems(1300)
   }, [])
 
+  // При обновлении Dependencies
   useEffect(() => {
-    localStorage.setItem(LS_WISHES_KEY, JSON.stringify(wishes)) // Update
+    localStorage.setItem(LS_WISHES_KEY, JSON.stringify(wishes))
   }, [wishes])
 
   useEffect(() => {
-    localStorage.setItem(LS_CHARACTERS_KEY, JSON.stringify(characters)) // Update
-    localStorage.setItem(LS_GEMS_KEY, gachaGems.toString()) //Update
+    localStorage.setItem(LS_CHARACTERS_KEY, JSON.stringify(characters))
+    localStorage.setItem(LS_GEMS_KEY, gachaGems.toString())
   }, [characters, gachaGems])
 
+  // увеличивает кол-во вращений по типам
   const increaseWishes = (wishType, increaseBy = 1) => {
     function setGuarantees(wishType = null) {
       let newGuarantees = wishes.guarantees
@@ -54,6 +64,7 @@ function App() {
     } else if (wishType in wishes) setWishes((wish) => ({ ...wish, [wishType]: (wishes[wishType] += increaseBy) }))
   }
 
+  // Ресет
   const reset = () => {
     setWishes({
       total: 0,
@@ -63,6 +74,7 @@ function App() {
     setGachagems(1e6)
   }
 
+  // Добавляет персонажа в массив characters. (Удобно и эффективнее хранит данные)
   const sendCharacters = (character) => {
     let newCharacters = characters
     if (newCharacters.some((char) => char.char.id === character.id)) {
@@ -84,6 +96,7 @@ function App() {
     setGachagems(gachaGems - spend)
   }
 
+  // JSX структура
   return (
     <>
       <Header

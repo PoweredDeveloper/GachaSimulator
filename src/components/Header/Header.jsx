@@ -1,3 +1,8 @@
+// Code written by: 
+// Powered Developer <https://github.com/PoweredDeveloper>
+// (Istomin Mikhail) Check my profile for more info.
+// MIT LICENSE
+ 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import gift from '../../assets/svgs/icons/gift.svg'
@@ -7,7 +12,7 @@ import gem from '../../assets/img/gem.png'
 export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, gemsTimerIncome, buttonGemsAdd }) {
   const [timer, setTimer] = useState(0)
 
-  // Timer
+  // Таймер
   useEffect(() => {
     const interval = setInterval(() => {
       if (timer >= 100) {

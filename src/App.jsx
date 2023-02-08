@@ -31,11 +31,8 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem(LS_CHARACTERS_KEY, JSON.stringify(characters)) // Update
-  }, [characters])
-
-  useEffect(() => {
-    localStorage.setItem(LS_GEMS_KEY, gachaGems.toString())
-  }, [gachaGems])
+    localStorage.setItem(LS_GEMS_KEY, gachaGems.toString()) //Update
+  }, [characters, gachaGems])
 
   const increaseWishes = (wishType, increaseBy = 1) => {
     function setGuarantees(wishType = null) {

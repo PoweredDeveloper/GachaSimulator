@@ -23,14 +23,13 @@ export default function Header({ wishes, gachaGems, addGachaGems, timerSpeed, ge
   }, [timer])
 
   return (
-    <header className='header_main'>
+    <header className=''>
       <h4>Total wished: {wishes.total}</h4>
       <div>
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={() => addGachaGems(buttonGemsAdd)}>
           <img src={gift} alt='+' />
         </motion.button>
         <h4>
-          {/* <img src={gem} alt="gem" /> */}
           Gems: 
           <span>{gachaGems}</span>
         </h4>

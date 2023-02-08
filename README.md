@@ -16,6 +16,10 @@ This is a simple gacha game. Here you can roll characters  by spending 💎 **Ga
 
 <br>
 
+Go [here](https://powereddeveloper.github.io/GachaSimulator/) if you want to visit this site!
+
+<br>
+
 ### 🎰 There is small info about rolls:
 ---
 <br>

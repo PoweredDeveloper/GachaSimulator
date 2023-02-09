@@ -61,8 +61,8 @@ export default function Header({ gachaGems, addGachaGems, timerSpeed, gemsTimerI
           <span>Gems: {gachaGems}</span>
         </h4>
         <div className='h-full flex items-center'>
-          <span className='dark:text-gray-100 text-gray-800 font-semibold mr-2'>{present != 0 ? toTime(present) : '260 гемов за 10 минут!'}</span>
-          <motion.button className={present <= 0 ? 'h-full aspect-square flex justify-center items-center bg-yellow-100 rounded-md' : 'h-full aspect-square flex justify-center items-center'} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={collectPresent}>
+          <span className='dark:text-gray-100 text-gray-800 font-semibold mr-2'>{present != 0 ? toTime(present) : 'Забирай подарок!'}</span>
+          <motion.button className={present <= 0 ? 'transition-all h-full aspect-square flex justify-center items-center bg-yellow-100 rounded-md' : 'transition-all rounded-md h-full aspect-square flex justify-center items-center bg-gray-600 dark:bg-transparent'} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={collectPresent}>
             <img className='h-2/3' src={gift} alt='+' />
           </motion.button>
         </div>

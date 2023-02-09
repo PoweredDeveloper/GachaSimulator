@@ -10,7 +10,7 @@ export default function ProgressBar({ gemsTimerIncome, timerSpeed, timer }) {
   return (
     <div className='h-5 dark:bg-gray-800 bg-gray-300 px-3 pb-3 rounded-b-lg'>
       <div className='h-full rounded-full dark:bg-gray-700 bg-gray-400'>
-        <div className='bg-blue-200 dark:bg-red-100 w-full h-full transition-all rounded-full' style={{ width: timer.toString() + '%' }} />
+        <div className='bg-blue-100 dark:bg-red-100 w-full h-full transition-all rounded-full' style={{ width: timer.toString() + '%' }} />
       </div>
     </div>
   )

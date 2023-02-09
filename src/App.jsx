@@ -64,16 +64,6 @@ function App() {
     } else if (wishType in wishes) setWishes((wish) => ({ ...wish, [wishType]: (wishes[wishType] += increaseBy) }))
   }
 
-  // Ресет
-  const reset = () => {
-    setWishes({
-      total: 0,
-      guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 },
-    })
-    setCharacters([])
-    setGachagems(0)
-  }
-
   // Добавляет персонажа в массив characters. (Удобно и эффективнее хранит данные)
   const sendCharacters = (character) => {
     let newCharacters = characters
@@ -110,7 +100,6 @@ function App() {
         wished={wishes}
         increaseWishes={increaseWishes}
         sendCharacter={sendCharacters}
-        reset={reset}
         gachaGems={gachaGems}
         spendGachaGems={spendGachaGems}
         discount={10}

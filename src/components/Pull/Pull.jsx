@@ -11,7 +11,6 @@ export default function Pull({
   wished,
   increaseWishes,
   sendCharacter,
-  reset,
   gachaGems,
   spendGachaGems,
   discount,
@@ -88,7 +87,6 @@ export default function Pull({
       <button className='' onClick={() => multipleRoll(multipleRollAmount)} discount={discount}>
         Roll x{multipleRollAmount}
       </button>
-      <button onClick={reset}>Reset</button>
     </div>
   )
 }

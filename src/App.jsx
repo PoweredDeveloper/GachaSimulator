@@ -119,6 +119,7 @@ function App() {
         multipleRollAmount={10}
       />
       <CharacterList characters={characters} />
+      <span className='text-center text-slate-900'>Hi!</span>
     </>
   )
 }

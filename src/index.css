@@ -6,3 +6,9 @@ MIT LICENSE */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* .header_block {
+    @apply p-2 h-full text-base flex justify-center items-center font-bold dark:bg-neutral-700 bg-neutral-300 dark:text-neutral-100 text-neutral-900 rounded-lg text-center;
+  } */
+}

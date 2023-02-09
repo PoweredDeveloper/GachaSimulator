@@ -8,12 +8,9 @@ import React from 'react'
 export default function ProgressBar({ gemsTimerIncome, timerSpeed, timer }) {
   // Просто отображение сколько времени до получения гемов
   return (
-    <div>
-      <div className=''>
-        <span>
-          +{gemsTimerIncome} / {timerSpeed / 600}m
-        </span>
-        <div style={{ width: timer.toString() + '%' }} />
+    <div className='h-5 dark:bg-gray-800 bg-gray-300 px-3 pb-3 rounded-b-lg'>
+      <div className='h-full rounded-full dark:bg-gray-700 bg-gray-400'>
+        <div className='bg-blue-200 dark:bg-red-100 w-full h-full transition-all rounded-full' style={{ width: timer.toString() + '%' }} />
       </div>
     </div>
   )

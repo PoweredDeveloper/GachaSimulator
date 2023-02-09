@@ -71,7 +71,7 @@ function App() {
       guarantees: { lastUnique: 0, lastLegendary: 0, lastEpic: 0, lastRare: 0 },
     })
     setCharacters([])
-    setGachagems(1e6)
+    setGachagems(0)
   }
 
   // Добавляет персонажа в массив characters. (Удобно и эффективнее хранит данные)
@@ -100,7 +100,6 @@ function App() {
   return (
     <>
       <Header
-        wishes={wishes}
         gachaGems={gachaGems}
         addGachaGems={addGachaGems}
         gemsTimerIncome={10}
@@ -119,7 +118,6 @@ function App() {
         multipleRollAmount={10}
       />
       <CharacterList characters={characters} />
-      <span className='text-center text-slate-900'>Hi!</span>
     </>
   )
 }

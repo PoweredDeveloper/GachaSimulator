@@ -82,9 +82,9 @@ export default function Pull({
 
   // JSX структура
   return (
-    <div className=''>
-      <button onClick={oneRoll}>Roll x1</button>
-      <button className='' onClick={() => multipleRoll(multipleRollAmount)} discount={discount}>
+    <div className='flex justify-center items-center mt-12 gap-3'>
+      <button className='btn' onClick={oneRoll}>Roll x1</button>
+      <button className='btn' onClick={() => multipleRoll(multipleRollAmount)} discount={discount}>
         Roll x{multipleRollAmount}
       </button>
     </div>

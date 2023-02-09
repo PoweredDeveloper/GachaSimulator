@@ -8,9 +8,9 @@ import { motion } from 'framer-motion'
 import gift from '../../assets/svgs/icons/gift.svg'
 import ProgressBar from './ProgressBar/ProgressBar'
 
-export default function Header({ gachaGems, addGachaGems, timerSpeed, gemsTimerIncome}) {
+export default function Header({ gachaGems, addGachaGems, timerSpeed, gemsTimerIncome, presentTime, presentAmount}) {
   const [timer, setTimer] = useState(0)
-  const [present, setPresent] = useState(600)
+  const [present, setPresent] = useState(presentTime)
   const [click, setClick] = useState(false)
 
   // Таймер
@@ -42,8 +42,8 @@ export default function Header({ gachaGems, addGachaGems, timerSpeed, gemsTimerI
 
   const collectPresent = () => {
     if (present <= 0) {
-      addGachaGems(260)
-      setPresent(600)
+      addGachaGems(presentAmount)
+      setPresent(presentTime)
       setClick(false)
     }
   }

@@ -8,7 +8,7 @@ MIT LICENSE */
 @tailwind utilities;
 
 @layer components {
-  /* .header_block {
-    @apply p-2 h-full text-base flex justify-center items-center font-bold dark:bg-neutral-700 bg-neutral-300 dark:text-neutral-100 text-neutral-900 rounded-lg text-center;
-  } */
+  .btn {
+    @apply transition-all px-4 py-1 bg-gray-400 border-2 border-gray-800 dark:bg-gray-800 dark:hover:border-gray-200 rounded-lg text-gray-800 dark:text-gray-200 font-semibold;
+  }
 }

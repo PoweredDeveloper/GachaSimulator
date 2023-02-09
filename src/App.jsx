@@ -88,13 +88,15 @@ function App() {
 
   // JSX структура
   return (
-    <>
+    <div className='bg-gray-200 dark:bg-gray-600 h-screen'>
       <Header
         gachaGems={gachaGems}
         addGachaGems={addGachaGems}
         gemsTimerIncome={10}
         timerSpeed={600}
         buttonGemsAdd={1}
+        presentTime={600}
+        presentAmount={260}
       />
       <Pull
         wished={wishes}
@@ -107,7 +109,7 @@ function App() {
         multipleRollAmount={10}
       />
       <CharacterList characters={characters} />
-    </>
+    </div>
   )
 }
 

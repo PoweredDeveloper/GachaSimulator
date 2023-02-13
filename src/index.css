@@ -9,6 +9,14 @@ MIT LICENSE */
 
 @layer components {
   .btn {
-    @apply transition-all px-4 py-1 bg-gray-400 border-2 border-gray-800 dark:bg-gray-800 dark:hover:border-gray-200 rounded-lg text-gray-800 dark:text-gray-200 font-semibold;
+    @apply relative transition-all px-4 py-1 bg-gray-400 border-2 hover:border-gray-800 dark:bg-gray-800 dark:border-gray-600 dark:hover:border-gray-200 rounded-lg text-gray-800 dark:text-gray-200 font-semibold;
+  }
+  .btn_sale:after {
+    content: attr(sale)'% OFF';
+    transform: translateX(50%) translateY(-60%);
+    @apply transition-all px-2 py-0.5 bg-blue-100 dark:bg-red-100 rounded-full absolute top-0 right-0 text-xs font-extrabold text-gray-200 border-2 border-gray-800 dark:border-gray-200
+  }
+  .character_card_bubble {
+    @apply bg-gray-200 px-3 rounded-lg font-semibold dark:bg-gray-700
   }
 }

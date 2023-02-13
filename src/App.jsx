@@ -30,7 +30,7 @@ function App() {
     if (localStorage.getItem(LS_CHARACTERS_KEY) != null) setCharacters(JSON.parse(localStorage.getItem(LS_CHARACTERS_KEY)))
     else setCharacters([])
     if (localStorage.getItem(LS_GEMS_KEY) != null) setGachagems(Number(localStorage.getItem(LS_GEMS_KEY)))
-    else setGachagems(1300)
+    else setGachagems(1e5)
   }, [])
 
   // При обновлении Dependencies
@@ -88,7 +88,7 @@ function App() {
 
   // JSX структура
   return (
-    <div className='bg-gray-200 dark:bg-gray-600 h-screen'>
+    <div className='bg-gray-200 dark:bg-gray-600 min-h-screen pb-10'>
       <Header
         gachaGems={gachaGems}
         addGachaGems={addGachaGems}

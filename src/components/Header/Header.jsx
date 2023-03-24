@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import gift from '../../assets/svgs/icons/gift.svg'
 import ProgressBar from './ProgressBar/ProgressBar'
+import { FaGem } from "react-icons/fa";
 
 export default function Header({ gachaGems, addGachaGems, timerSpeed, gemsTimerIncome, presentTime, presentAmount}) {
   const [timer, setTimer] = useState(0)
@@ -58,7 +59,7 @@ export default function Header({ gachaGems, addGachaGems, timerSpeed, gemsTimerI
     <header className='w-full'>
       <div className='w-full h-14 bg-gray-300 dark:bg-gray-800 flex justify-between items-center flex-row p-3'>
         <h4 className='dark:bg-gray-700 bg-gray-400 h-full px-2 flex justify-center items-center rounded-lg dark:text-gray-100 text-gray-800 font-semibold border-2 border-transparent transition-all cursor-pointer dark:hover:border-gray-100 hover:border-gray-800'>
-          <span>Gems: {gachaGems}</span>
+          <span className='flex gap-1 justify-center items-center'><FaGem className='text-base mt-1' />{gachaGems}</span>
         </h4>
         <div className='h-full flex items-center'>
           <span className='dark:text-gray-100 text-gray-800 font-semibold mr-2'>{present != 0 ? toTime(present) : 'Забирай подарок!'}</span>

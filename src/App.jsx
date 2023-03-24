@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react'
 import Pull from './components/Pull/Pull'
 import Header from './components/Header/Header'
 import CharacterList from './components/ChracterList/CharacterList'
+import InfoButton from './InfoButton'
+import Infotab from './components/InfoTab/Infotab'
 
 const LS_WISHES_KEY = 'gacha.wisher.wishes'
 const LS_CHARACTERS_KEY = 'gacha.wisher.characters'
@@ -22,6 +24,7 @@ function App() {
   })
   const [characters, setCharacters] = useState([])
   const [gachaGems, setGachagems] = useState(0)
+  const [choosenTab, setChoosenTab] = useState(0)
 
   // Вызывается при загрузке сайта (первом рендере)
   useEffect(() => {
@@ -86,29 +89,47 @@ function App() {
     setGachagems(gachaGems - spend)
   }
 
+  const toPulls = () => {
+    setChoosenTab(0)
+  }
+
+  const toInfo = () => {
+    setChoosenTab(1)
+  }
+
   // JSX структура
   return (
     <div className='bg-gray-200 dark:bg-gray-600 min-h-screen pb-10'>
-      <Header
-        gachaGems={gachaGems}
-        addGachaGems={addGachaGems}
-        gemsTimerIncome={10}
-        timerSpeed={600}
-        buttonGemsAdd={1}
-        presentTime={600}
-        presentAmount={260}
-      />
-      <Pull
-        wished={wishes}
-        increaseWishes={increaseWishes}
-        sendCharacter={sendCharacters}
-        gachaGems={gachaGems}
-        spendGachaGems={spendGachaGems}
-        discount={10}
-        rollCost={130}
-        multipleRollAmount={10}
-      />
-      <CharacterList characters={characters} />
+    <Header
+      gachaGems={gachaGems}
+      addGachaGems={addGachaGems}
+      gemsTimerIncome={10}
+      timerSpeed={600}
+      buttonGemsAdd={1}
+      presentTime={600}
+      presentAmount={260}
+    />
+    {
+      choosenTab == 0 ?
+      <>
+        <Pull
+          wished={wishes}
+          increaseWishes={increaseWishes}
+          sendCharacter={sendCharacters}
+          gachaGems={gachaGems}
+          spendGachaGems={spendGachaGems}
+          discount={10}
+          rollCost={130}
+          multipleRollAmount={10}
+        />
+        <CharacterList characters={characters} />
+      </>
+      :
+      <>
+        <Infotab />
+      </>
+    }
+      <InfoButton toPulls={toPulls} toInfo={toInfo} />
     </div>
   )
 }

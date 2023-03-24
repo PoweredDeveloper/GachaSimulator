@@ -19,4 +19,10 @@ MIT LICENSE */
   .character_card_bubble {
     @apply bg-gray-200 px-3 rounded-lg font-semibold dark:bg-gray-700
   }
+  .text {
+    @apply font-semibold my-1 dark:text-gray-200 text-gray-800
+  }
+  .link {
+    @apply font-semibold my-1 dark:text-gray-200 text-gray-800 hover:underline hover:dark:text-gray-500 hover:text-gray-600 transition-all
+  }
 }
